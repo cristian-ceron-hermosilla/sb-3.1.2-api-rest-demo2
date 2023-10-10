@@ -1,4 +1,4 @@
-# NameNormalize(nameOri=demo, name1May=Demo, name1min=demo, nameWithGuion=demo)
+# demo
 
 ## Ejecución
 `mvn spring-boot:run -P local-dev`
