@@ -57,6 +57,15 @@ public class PersonasApi {
     /*
     * 
     */
+    @PostMapping("/add")
+    public ResponseEntity<PersonasDtoOutput> add(@RequestBody PersonasDtoInput personasDtoIn) {
+        PersonasDtoOutput dto = sPersonas.add(personasDtoIn);
+        if (dto != null) {
+            return ResponseEntity.ok(dto);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
     @PostMapping("/add-many")
     public ResponseEntity<List<PersonasDtoOutput>> addMany(@RequestBody List<PersonasDtoInput> personasDtoIn) {
         List<PersonasDtoOutput> dtos = sPersonas.addMany(personasDtoIn);

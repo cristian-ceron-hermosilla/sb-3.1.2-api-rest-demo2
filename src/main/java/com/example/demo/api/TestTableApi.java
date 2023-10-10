@@ -57,6 +57,15 @@ public class TestTableApi {
     /*
     * 
     */
+    @PostMapping("/add")
+    public ResponseEntity<TestTableDtoOutput> add(@RequestBody TestTableDtoInput testTableDtoIn) {
+        TestTableDtoOutput dto = sTestTable.add(testTableDtoIn);
+        if (dto != null) {
+            return ResponseEntity.ok(dto);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
     @PostMapping("/add-many")
     public ResponseEntity<List<TestTableDtoOutput>> addMany(@RequestBody List<TestTableDtoInput> testTableDtoIn) {
         List<TestTableDtoOutput> dtos = sTestTable.addMany(testTableDtoIn);

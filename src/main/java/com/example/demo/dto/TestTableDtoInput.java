@@ -14,7 +14,7 @@ import lombok.Data;
 //@AllArgsConstructor
 public class TestTableDtoInput implements Serializable {
 
-    private static final long serialVersionUID = 1696858283613L;
+    private static final long serialVersionUID = 1696937980501L;
 
     /*
     * id integer [primary key]

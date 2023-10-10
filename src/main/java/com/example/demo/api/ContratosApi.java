@@ -57,6 +57,15 @@ public class ContratosApi {
     /*
     * 
     */
+    @PostMapping("/add")
+    public ResponseEntity<ContratosDtoOutput> add(@RequestBody ContratosDtoInput contratosDtoIn) {
+        ContratosDtoOutput dto = sContratos.add(contratosDtoIn);
+        if (dto != null) {
+            return ResponseEntity.ok(dto);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
     @PostMapping("/add-many")
     public ResponseEntity<List<ContratosDtoOutput>> addMany(@RequestBody List<ContratosDtoInput> contratosDtoIn) {
         List<ContratosDtoOutput> dtos = sContratos.addMany(contratosDtoIn);

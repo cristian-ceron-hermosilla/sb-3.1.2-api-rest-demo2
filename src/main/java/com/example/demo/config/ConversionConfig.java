@@ -24,7 +24,7 @@ public class ConversionConfig {
 
     @Bean
     public TestTableEntiToTestTableDTOOutConverter testTableEntiToTestTableDTOOutConverter() {
-        return new PersonasEntiToPersonasDTOOutConverter();
+        return new TestTableEntiToTestTableDTOOutConverter();
     }
 
     @Bean
@@ -44,7 +44,7 @@ public class ConversionConfig {
 
     @Bean
     public ContratosEntiToContratosDTOOutConverter contratosEntiToContratosDTOOutConverter() {
-        return new PersonasEntiToPersonasDTOOutConverter();
+        return new ContratosEntiToContratosDTOOutConverter();
     }
 
 }
