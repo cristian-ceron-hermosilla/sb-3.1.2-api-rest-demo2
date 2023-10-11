@@ -14,7 +14,7 @@ import lombok.Data;
 //@AllArgsConstructor
 public class ContratosDtoInput implements Serializable {
 
-    private static final long serialVersionUID = 1697067482652L;
+    private static final long serialVersionUID = 1697067664506L;
 
     /*
     * id integer [primary key]

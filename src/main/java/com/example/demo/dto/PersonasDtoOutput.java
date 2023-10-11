@@ -13,7 +13,7 @@ import lombok.Builder;
 @Builder
 public class PersonasDtoOutput implements Serializable {
 
-    private static final long serialVersionUID = 1697067482615L;
+    private static final long serialVersionUID = 1697067664490L;
 
     /*
     * id integer [primary key, ref: < Contratos.idPersona]

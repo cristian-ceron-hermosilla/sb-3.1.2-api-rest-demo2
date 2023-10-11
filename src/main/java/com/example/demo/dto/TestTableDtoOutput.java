@@ -13,7 +13,7 @@ import lombok.Builder;
 @Builder
 public class TestTableDtoOutput implements Serializable {
 
-    private static final long serialVersionUID = 1697067482573L;
+    private static final long serialVersionUID = 1697067664467L;
 
     /*
     * id integer [primary key]

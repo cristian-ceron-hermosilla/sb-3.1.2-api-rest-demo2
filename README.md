@@ -88,6 +88,10 @@ Table Test_Table {
 
 ### API
 
+
+
+### testTable
+
 [GET] http://localhost:8080/test-table/get/{id}
 
 [GET] http://localhost:8080/test-table/get-all
@@ -98,7 +102,7 @@ Table Test_Table {
 
 
 
-### API
+### personas
 
 [GET] http://localhost:8080/personas/get/{id}
 
@@ -110,7 +114,7 @@ Table Test_Table {
 
 
 
-### API
+### contratos
 
 [GET] http://localhost:8080/contratos/get/{id}
 
