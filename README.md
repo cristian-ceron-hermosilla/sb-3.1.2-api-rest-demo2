@@ -27,22 +27,21 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
-  sql:
-    init:
-      mode: always
-  h2:
-    console:
-      enabled: true
   jpa:
     generate-ddl: true
     open-in-view: true
     hibernate:
       ddl-auto: update
     show-sql: true
-#    defer-datasource-initialization: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+  sql:
+    init:
+      mode: always
+  h2:
+    console:
+      enabled: true
 
 server:
   servlet:
