@@ -16,6 +16,8 @@ SpringBoot Application :DemoApplication.java
 
 ### Configuración
 
+```yml
+
 spring:
   application:
     name: demo
@@ -52,6 +54,8 @@ logging:
     web: debug
 
 
+```
+
 
 
 ### Versiones
@@ -77,6 +81,8 @@ Table Test_Table {
   value2 varchar
 }
 
+
+```
 
 
 
